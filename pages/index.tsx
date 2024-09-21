@@ -8,16 +8,8 @@ export const Home: FC = () => {
   const config = useRequestContext<Env>().get("config");
 
   if (config) {
-    return (
-      <>
-        <RepoList />
-      </>
-    );
+    return <RepoList />;
   }
 
-  return (
-    <>
-      <RegistryForm />
-    </>
-  );
+  return <RegistryForm />;
 };
