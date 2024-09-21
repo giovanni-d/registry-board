@@ -1,0 +1,12 @@
+node_modules/
+
+deno.lock
+deno_dir/
+
+.env
+
+*.log
+
+coverage/
+
+config.db.*

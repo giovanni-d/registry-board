@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-write --allow-env --watch main.tsx",
+    "start": "deno run --allow-net --allow-read --allow-write --allow-env main.tsx",
+    "test": "deno test --allow-net",
+    "lint": "deno lint"
+  },
+  "unstable": ["kv"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
+  },
+  "imports": {
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.2",
+    "hono": "https://deno.land/x/hono@v4.3.11/mod.ts",
+    "hono/css": "https://deno.land/x/hono@v4.3.11/helper/css/index.ts",
+    "hono/dev": "https://deno.land/x/hono@v4.3.11/helper/dev/index.ts",
+    "hono/jsx": "https://deno.land/x/hono@v4.3.11/jsx/index.ts",
+    "hono/jsx-renderer": "https://deno.land/x/hono@v4.3.11/middleware/jsx-renderer/index.ts",
+    "hono/jsx/jsx-runtime": "https://deno.land/x/hono@v4.3.11/jsx/jsx-runtime.ts",
+    "hono/logger": "https://deno.land/x/hono@v4.3.11/middleware/logger/index.ts",
+    "hono/types": "https://deno.land/x/hono@v4.3.11/types.ts"
+  }
+}
